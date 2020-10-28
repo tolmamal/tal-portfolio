@@ -15,7 +15,7 @@ const Contact = () => {
     return (
         <Paper className={classes.root}>
             <Typography variant="h2" color="primary">
-                Resume
+                Contact
             </Typography>
         </Paper>
     );

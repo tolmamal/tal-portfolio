@@ -1,13 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter as Router } from 'react-router-dom';
-// import './index.css';
+import { ThemeProvider } from "@material-ui/styles";
+import theme from './Material-UI/theme';
+import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 const app = (
     <Router>
-        <App />
+        <ThemeProvider theme={theme}>
+            <App />
+        </ThemeProvider>
+
     </Router>
 );
 
