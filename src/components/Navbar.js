@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { makeStyles } from "@material-ui/core/styles";
 import avatar from '../assets/images/avatar.png';
+import Footer from '../components/Footer';
 import {
     Drawer,
     Box,
@@ -46,9 +47,18 @@ const useStyles = makeStyles((theme) => ({
     listItem: {
         color: "tan",
     },
+    menuIcon: {
+        color: "tomato",
+    },
 
 }));
 
+const menuItems = [
+    { listIcon: <Home />, listText: "Home", listPath: "/" },
+    { listIcon: <AssignmentInd />, listText: "Resume", listPath: "/resume" },
+    { listIcon: <Apps />, listText: "Portfolio", listPath: "/portfolio" },
+    { listIcon: <ContactMail />, listText: "Contact", listPath: "/contact" },
+];
 
 
 
@@ -62,15 +72,44 @@ const Navbar = () => {
             <Avatar className={classes.avatar} src={avatar} alt="Tal Galili "/>
             <Divider />
             <List>
-
+                {menuItems.map((item, index) => (
+                    <ListItem
+                        button
+                        key={index}
+                        className={classes.listItem}
+                        onClick={() => setOpen(false)}
+                        component={Link}
+                        to={item.listPath}
+                    >
+                        <ListItemIcon className={classes.listItem}>
+                            {item.listIcon}
+                        </ListItemIcon>
+                        <ListItemText primary={item.listText} />
+                    </ListItem>
+                ))}
             </List>
         </Box>
     );
 
     return (
-        <div>
-
-        </div>
+        <React.Fragment>
+            <Box component="nav">
+                <AppBar position="static" className={classes.appbar}>
+                    <Toolbar>
+                        <IconButton onClick={() => setOpen(true)}>
+                            <MenuIcon className={classes.menuIcon} />
+                        </IconButton>
+                        <Typography variant="h5" className={classes.title}>
+                            Portfolio
+                        </Typography>
+                    </Toolbar>
+                </AppBar>
+            </Box>
+            <Drawer open={open} anchor="left" onClose={() => setOpen(false)}>
+                {sideList()}
+                <Footer />
+            </Drawer>
+        </React.Fragment>
     );
 
 
