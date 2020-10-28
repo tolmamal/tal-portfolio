@@ -82,9 +82,6 @@ const Portfolio = () => {
             </Grid>
         </Box>
     );
-
-
-
 };
 
 export default Portfolio;
