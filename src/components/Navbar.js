@@ -17,6 +17,13 @@ import {
     Typography,
 } from "@material-ui/core";
 
+//icons
+import AssignmentInd from "@material-ui/icons/AssignmentInd";
+import Home from "@material-ui/icons/Home";
+import Apps from "@material-ui/icons/Apps";
+import ContactMail from "@material-ui/icons/ContactMail";
+import MenuIcon from '@material-ui/icons/Menu';
+
 const useStyles = makeStyles((theme) => ({
     appbar: {
         background: "#222",
