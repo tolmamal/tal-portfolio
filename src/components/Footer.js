@@ -39,6 +39,7 @@ const Footer = () => {
         </Link>
     );
 
+
     return (
         <BottomNavigation className={classes.bottomNavContainer}>
             <BottomNavigationAction
@@ -58,6 +59,8 @@ const Footer = () => {
             <BottomNavigationAction
                 icon={<EmailIcon />}
                 className={classes.root}
+                target={"_blank"}
+                href={"mailto:tolmamal@gmail.com"}
             />
         </BottomNavigation>
     );

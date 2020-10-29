@@ -24,6 +24,7 @@ import Home from "@material-ui/icons/Home";
 import Apps from "@material-ui/icons/Apps";
 import ContactMail from "@material-ui/icons/ContactMail";
 import MenuIcon from '@material-ui/icons/Menu';
+import InfoIcon from '@material-ui/icons/Info';
 
 const useStyles = makeStyles((theme) => ({
     appbar: {
@@ -55,6 +56,7 @@ const useStyles = makeStyles((theme) => ({
 
 const menuItems = [
     { listIcon: <Home />, listText: "Home", listPath: "/" },
+    { listIcon: <InfoIcon />, listText: "About", listPath: "/about" },
     { listIcon: <AssignmentInd />, listText: "Resume", listPath: "/resume" },
     { listIcon: <Apps />, listText: "Portfolio", listPath: "/portfolio" },
     { listIcon: <ContactMail />, listText: "Contact", listPath: "/contact" },
@@ -111,8 +113,6 @@ const Navbar = () => {
             </Drawer>
         </React.Fragment>
     );
-
-
 };
 
 export default Navbar;

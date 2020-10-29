@@ -70,10 +70,10 @@ const Portfolio = () => {
                             </CardActionArea>
                             <CardActions>
                                 <Button size="small" color="primary">
-                                    Share
+                                    Code
                                 </Button>
                                 <Button size="small" color="primary">
-                                    Live Demo
+                                    Live
                                 </Button>
                             </CardActions>
                         </Card>
