@@ -11,8 +11,9 @@ import {
     Typography,
     Box
 } from "@material-ui/core";
+import Project1 from '../components/Projects/Project1';
 
-import project1 from '../assets/images/tech.png';
+import projectImg from '../assets/images/tech.png';
 
 const useStyles = makeStyles((theme) => ({
     mainContainer: {
@@ -29,22 +30,47 @@ const projects = [
     {
         name: 'Job Tracker',
         description: 'Manage and keep tracking your job applications',
-        image: project1
+        image: projectImg
     },
     {
         name: 'Job Tracker',
         description: 'Manage and keep tracking your job applications',
-        image: project1
+        image: projectImg
     },
     {
         name: 'Job Tracker',
         description: 'Manage and keep tracking your job applications',
-        image: project1
+        image: projectImg
     },
 ];
 
 const Portfolio = () => {
     const classes = useStyles();
+
+    return (
+        <Box component="div" className={classes.mainContainer}>
+            <Grid container justify="center">
+                <Grid item xs={4}>
+                    <Project1 />
+                </Grid>
+                <Grid item xs={4}>
+                    <Project1 />
+                </Grid>
+                <Grid item xs={4}>
+                    <Project1 />
+                </Grid>
+                <Grid item xs={4}>
+                    <Project1 />
+                </Grid>
+                <Grid item xs={4}>
+                    <Project1 />
+                </Grid>
+                <Grid item xs={4}>
+                    <Project1 />
+                </Grid>
+            </Grid>
+        </Box>
+    );
 
     return (
         <Box component="div" className={classes.mainContainer}>
