@@ -5,6 +5,14 @@ const theme = createMuiTheme({
     typography: {
         fontFamily: ['Montserrat', 'sans-serif', 'Ubuntu', 'Nunito', 'Roboto', 'Open Sans'].join(','),
     },
+    palette: {
+        primary: {
+          main: '#ce5842'
+        },
+        secondary: {
+            main : '#b39d7c'
+        }
+    }
 });
 
 
