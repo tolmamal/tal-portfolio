@@ -22,10 +22,7 @@
       <change beforePath="$PROJECT_DIR$/../burger-builder" beforeDir="false" afterPath="$PROJECT_DIR$/../burger-builder" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../code-interview" beforeDir="false" afterPath="$PROJECT_DIR$/../code-interview" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../job-tracker" beforeDir="false" afterPath="$PROJECT_DIR$/../job-tracker" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Utils/data.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Utils/data.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Portfolio.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Portfolio.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Projects/Project2.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Projects/Project2.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Projects/Project3.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Projects/Project3.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Projects/Project5.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Projects/Project5.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -148,8 +145,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/Projects/Project5.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="50" column="68" selection-start-line="50" selection-start-column="68" selection-end-line="50" selection-end-column="68" />
+            <state relative-caret-position="266">
+              <caret line="116" column="67" selection-start-line="116" selection-start-column="67" selection-end-line="116" selection-end-column="67" />
               <folding>
                 <element signature="e#0#40#0" expanded="true" />
                 <element signature="e#281#322#0" expanded="true" />
@@ -233,19 +230,6 @@
               <item name="tal-portfolio" type="b2602c69:ProjectViewProjectNode" />
               <item name="tal-portfolio" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="Projects" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tal-portfolio" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tal-portfolio" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Material-UI" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tal-portfolio" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tal-portfolio" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="Utils" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -314,12 +298,12 @@
       <updated>1603881556217</updated>
       <workItem from="1603881557356" duration="15226000" />
       <workItem from="1603959560915" duration="38592000" />
-      <workItem from="1604304449232" duration="14473000" />
+      <workItem from="1604304449232" duration="15050000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="68291000" />
+    <option name="totallyTimeSpent" value="68868000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
@@ -546,8 +530,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Projects/Project5.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="50" column="68" selection-start-line="50" selection-start-column="68" selection-end-line="50" selection-end-column="68" />
+        <state relative-caret-position="266">
+          <caret line="116" column="67" selection-start-line="116" selection-start-column="67" selection-end-line="116" selection-end-column="67" />
           <folding>
             <element signature="e#0#40#0" expanded="true" />
             <element signature="e#281#322#0" expanded="true" />

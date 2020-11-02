@@ -111,15 +111,15 @@ const Project5 = () => {
                 >
                     View Code
                 </Button>
-                {/*<Button*/}
-                {/*    size="small"*/}
-                {/*    color="primary"*/}
-                {/*    href="https://flamboyant-leavitt-b6c856.netlify.app/"*/}
-                {/*    target={"_blank"}*/}
-                {/*    rel="noopener"*/}
-                {/*>*/}
-                {/*    Go Live*/}
-                {/*</Button>*/}
+                <Button
+                    size="small"
+                    color="primary"
+                    href="https://tal-galili-portfolio.netlify.app/"
+                    target={"_blank"}
+                    rel="noopener"
+                >
+                    Go Live
+                </Button>
             </CardActions>
         </Card>
     );
