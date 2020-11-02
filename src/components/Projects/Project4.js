@@ -12,8 +12,10 @@ import { Card,
     Grid,
 } from "@material-ui/core";
 //icons
-import { FaReact } from 'react-icons/fa';
-import { SiJavascript } from 'react-icons/si';
+
+import { SiPython } from 'react-icons/si';
+import { SiMongodb } from 'react-icons/si';
+import { SiFlask } from 'react-icons/si';
 
 
 const useStyles = makeStyles((theme) => ({
@@ -44,9 +46,9 @@ const useStyles = makeStyles((theme) => ({
 
 
 
-const Project3 = () => {
+const Project4 = () => {
     const classes = useStyles();
-    const [projectName, setProjectName] = useState('Job Matcher - Client');
+    const [projectName, setProjectName] = useState('Job Matcher - Server');
     const [projectDescription, setProjectDescription] = useState('A web application that analyze user resume and matches job opportunities ');
 
 
@@ -62,14 +64,19 @@ const Project3 = () => {
                             spacing={1}
                             className={classes.skills}
                         >
-                            <Grid item xs={6}>
+                            <Grid item xs={4}>
                                 <Typography variant="h3">
-                                    <FaReact />
+                                    <SiPython />
                                 </Typography>
                             </Grid>
-                            <Grid item xs={6}>
+                            <Grid item xs={4}>
                                 <Typography variant="h3">
-                                    <SiJavascript />
+                                    <SiMongodb />
+                                </Typography>
+                            </Grid>
+                            <Grid item xs={4}>
+                                <Typography variant="h3">
+                                    <SiFlask />
                                 </Typography>
                             </Grid>
                         </Grid>
@@ -82,7 +89,7 @@ const Project3 = () => {
 
     return (
         <Card className={classes.cardContainer}>
-            <CardHeader title="Job Matcher Client" component={() => cardHeader()}>
+            <CardHeader title="Job Matcher Server" component={() => cardHeader()}>
 
             </CardHeader>
             <CardActionArea>
@@ -99,7 +106,7 @@ const Project3 = () => {
                 <Button
                     size="small"
                     color="primary"
-                    href="https://github.com/tolmamal/job-matcher-client"
+                    href="https://github.com/tolmamal/job-matcher-server"
                     target={"_blank"}
                     rel="noopener"
                 >
@@ -120,4 +127,4 @@ const Project3 = () => {
 
 };
 
-export default Project3;
+export default Project4;
