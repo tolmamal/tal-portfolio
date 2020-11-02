@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { makeStyles } from "@material-ui/core/styles";
 import {
     Grid,
@@ -9,7 +9,8 @@ import {
     CardMedia,
     Button,
     Typography,
-    Box
+    Box,
+    Grow
 } from "@material-ui/core";
 import Project1 from '../components/Projects/Project1';
 
@@ -47,27 +48,69 @@ const projects = [
 const Portfolio = () => {
     const classes = useStyles();
 
+    const [checked, setChecked] = useState(true);
+
     return (
         <Box component="div" className={classes.mainContainer}>
             <Grid container justify="center">
-                <Grid item xs={4}>
-                    <Project1 />
-                </Grid>
-                <Grid item xs={4}>
-                    <Project1 />
-                </Grid>
-                <Grid item xs={4}>
-                    <Project1 />
-                </Grid>
-                <Grid item xs={4}>
-                    <Project1 />
-                </Grid>
-                <Grid item xs={4}>
-                    <Project1 />
-                </Grid>
-                <Grid item xs={4}>
-                    <Project1 />
-                </Grid>
+                <Grow
+                    in={checked}
+                    style={{ transformOrigin: '0 0 0' }}
+                    {...(checked ? { timeout: 1000 } : {})}
+                >
+                    <Grid item xs={4}>
+                        <Project1 />
+                    </Grid>
+                </Grow>
+                <Grow
+                    in={checked}
+                    style={{ transformOrigin: '0 0 0' }}
+                    {...(checked ? { timeout: 2000 } : {})}
+                >
+                    <Grid item xs={4}>
+                        <Project1 />
+                    </Grid>
+                </Grow>
+
+                <Grow
+                    in={checked}
+                    style={{ transformOrigin: '0 0 0' }}
+                    {...(checked ? { timeout: 3000 } : {})}
+                >
+                    <Grid item xs={4}>
+                        <Project1 />
+                    </Grid>
+                </Grow>
+
+                <Grow
+                    in={checked}
+                    style={{ transformOrigin: '0 0 0' }}
+                    {...(checked ? { timeout: 4000 } : {})}
+                >
+                    <Grid item xs={4}>
+                        <Project1 />
+                    </Grid>
+                </Grow>
+
+                <Grow
+                    in={checked}
+                    style={{ transformOrigin: '0 0 0' }}
+                    {...(checked ? { timeout: 5000 } : {})}
+                >
+                    <Grid item xs={4}>
+                        <Project1 />
+                    </Grid>
+                </Grow>
+
+                <Grow
+                    in={checked}
+                    style={{ transformOrigin: '0 0 0' }}
+                    {...(checked ? { timeout: 6000 } : {})}
+                >
+                    <Grid item xs={4}>
+                        <Project1 />
+                    </Grid>
+                </Grow>
             </Grid>
         </Box>
     );

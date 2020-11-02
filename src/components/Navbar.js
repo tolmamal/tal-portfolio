@@ -25,6 +25,8 @@ import Apps from "@material-ui/icons/Apps";
 import ContactMail from "@material-ui/icons/ContactMail";
 import MenuIcon from '@material-ui/icons/Menu';
 import InfoIcon from '@material-ui/icons/Info';
+import PersonIcon from '@material-ui/icons/Person';
+
 
 const useStyles = makeStyles((theme) => ({
     appbar: {
@@ -58,7 +60,7 @@ const menuItems = [
     { listIcon: <Home />, listText: "Home", listPath: "/" },
     { listIcon: <InfoIcon />, listText: "About", listPath: "/about" },
     { listIcon: <AssignmentInd />, listText: "Resume", listPath: "/resume" },
-    { listIcon: <Apps />, listText: "Portfolio", listPath: "/portfolio" },
+    { listIcon: <PersonIcon />, listText: "Portfolio", listPath: "/portfolio" },
     { listIcon: <ContactMail />, listText: "Contact", listPath: "/contact" },
 ];
 
