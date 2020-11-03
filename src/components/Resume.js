@@ -17,6 +17,9 @@ const Resume = () => {
             <Typography variant="h2" color="primary">
                 Resume
             </Typography>
+            <Typography variant="h6">
+                On Progress......
+            </Typography>
         </Paper>
     );
 

@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import { makeStyles } from "@material-ui/core/styles";
-import { Paper, Typography, Button, Grow } from "@material-ui/core";
+import { Paper, Typography, Button, Grow, Grid } from "@material-ui/core";
 import emoji from'react-easy-emoji';
 import { about } from '../Utils/data';
+
 
 
 const useStyles = makeStyles((theme) => ({
@@ -27,7 +28,14 @@ const useStyles = makeStyles((theme) => ({
         margin: 120,
         padding: 10,
         paddingLeft: '60%'
-    }
+    },
+    socialSection: {
+        marginLeft: 15,
+        marginBottom: 40
+    },
+    bottom: {
+        marginBottom: '3%',
+    },
 
 
 
@@ -37,6 +45,7 @@ const useStyles = makeStyles((theme) => ({
 const About = () => {
     const classes = useStyles();
     const [checked, setChecked] = useState(true);
+
 
     return (
         <div className={classes.root}>
@@ -61,6 +70,7 @@ const About = () => {
                                 {about.subTitle}
                             </Typography>
                         </div>
+
                         <div className={classes.buttonSection}>
                             <Button
                                 variant="contained"

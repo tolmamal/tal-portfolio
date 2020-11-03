@@ -28,6 +28,7 @@ import InfoIcon from '@material-ui/icons/Info';
 import PersonIcon from '@material-ui/icons/Person';
 
 
+
 const useStyles = makeStyles((theme) => ({
     appbar: {
         background: "#222",
@@ -61,6 +62,7 @@ const menuItems = [
     { listIcon: <InfoIcon />, listText: "About", listPath: "/about" },
     { listIcon: <AssignmentInd />, listText: "Resume", listPath: "/resume" },
     { listIcon: <PersonIcon />, listText: "Portfolio", listPath: "/portfolio" },
+    { listIcon: <Apps />, listText: "Skills", listPath: "/skills" },
     { listIcon: <ContactMail />, listText: "Contact", listPath: "/contact" },
 ];
 

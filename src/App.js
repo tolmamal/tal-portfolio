@@ -8,7 +8,7 @@ import Navbar from './components/Navbar';
 import Portfolio from './components/Portfolio';
 import Contact from './components/Contact';
 import About from './components/About';
-
+import Skills from './components/Skills';
 
 import './App.css';
 
@@ -23,6 +23,7 @@ function App() {
                 <Route exact path="/portfolio" component={Portfolio} />
                 <Route exact path="/contact" component={Contact} />
                 <Route exact path="/about" component={About} />
+                <Route exact path="/skills" component={Skills} />
             </Switch>
         </React.Fragment>
     );

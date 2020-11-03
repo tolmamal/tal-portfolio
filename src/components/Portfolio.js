@@ -90,15 +90,6 @@ const Portfolio = () => {
                     </Grid>
                 </Grow>
 
-                {/*<Grow*/}
-                {/*    in={checked}*/}
-                {/*    style={{ transformOrigin: '0 0 0' }}*/}
-                {/*    {...(checked ? { timeout: 6000 } : {})}*/}
-                {/*>*/}
-                {/*    <Grid item xs={4}>*/}
-                {/*        <Project1 />*/}
-                {/*    </Grid>*/}
-                {/*</Grow>*/}
             </Grid>
         </Box>
     );
