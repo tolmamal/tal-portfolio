@@ -19,6 +19,10 @@ const useStyles = makeStyles((theme) => ({
     },
     content: {
         padding: 15,
+        [theme.breakpoints.up('md')]: {
+            height: 400,
+            width: 1000,
+        },
     },
     subTitle: {
         padding: 10,
@@ -34,10 +38,19 @@ const useStyles = makeStyles((theme) => ({
         marginBottom: 40
     },
     bottom: {
-        marginBottom: '3%',
+        marginLeft: '80px',
+        paddingTop: 5,
+        [theme.breakpoints.up('md')]: {
+            marginLeft: '70%',
+            margin: 120,
+            padding: 10
+
+        },
     },
+    mainGrid: {
+        padding: 10,
 
-
+    }
 
 }));
 
@@ -46,49 +59,44 @@ const About = () => {
     const classes = useStyles();
     const [checked, setChecked] = useState(true);
 
-
     return (
-        <div className={classes.root}>
-            <div className={classes.container}>
-                <Grow
-                    in={checked}
-                    {...(checked ? { timeout: 1000 } : {})}
-                >
-                    <Paper elevation={4} className={classes.paper}>
-                        <div className={classes.content}>
-                            <Typography
-                                variant="h4"
-                                color="primary"
-                                style={{ fontWeight: 'bold' }}
-                            >
-                                {' '}
-                                {about.title}
-                                {' '}
-                                <span>{emoji("👋")}</span>
-                            </Typography>
-                            <Typography variant="h5" className={classes.subTitle}>
-                                {about.subTitle}
-                            </Typography>
-                        </div>
+        <Grid container className={classes.mainGrid}>
+            <Grow
+                in={checked}
+                {...(checked ? { timeout: 1000 } : {})}
+            >
+                <Paper className={classes.content}>
+                    <Grid item xs={12}>
+                        <Typography
+                            variant="h4"
+                            color="primary"
+                            style={{ fontWeight: 'bold' }}
+                        >
+                            {' '}
+                            {about.title}
+                            {' '}
+                            <span>{emoji("👋")}</span>
+                        </Typography>
+                        <Typography variant="h6" className={classes.subTitle}>
+                            {about.subTitle}
+                        </Typography>
+                    </Grid>
+                    <Grid item xs={12} className={classes.bottom}>
+                        <Button
+                            variant="contained"
+                            color="primary"
+                            href={about.resumeLink}
+                            target={"_blank"}
 
-                        <div className={classes.buttonSection}>
-                            <Button
-                                variant="contained"
-                                color="primary"
-                                href={about.resumeLink}
-                                target={"_blank"}
+                        >
+                            See my resume
+                        </Button>
+                    </Grid>
+                </Paper>
+            </Grow>
 
-                            >
-                                See my resume
-                            </Button>
-                        </div>
-                    </Paper>
-                </Grow>
-            </div>
-        </div>
+        </Grid>
     );
-
-
 };
 
 export default About;
