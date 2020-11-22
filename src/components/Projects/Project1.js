@@ -17,6 +17,7 @@ import { SiJavascript } from 'react-icons/si';
 import { SiFirebase } from 'react-icons/si';
 import { SiMaterialUi } from 'react-icons/si';
 import { SiRedux } from 'react-icons/si';
+import {object} from "prop-types";
 
 const useStyles = makeStyles((theme) => ({
     cardContainer: {
@@ -38,17 +39,22 @@ const useStyles = makeStyles((theme) => ({
         alignItems: 'center',
         justifyContent: 'center',
         paddingTop: '8px'
+    },
+    cardContent: {
+        padding: '4px'
+    },
+    cardActions: {
+        display: 'block',
     }
 
 }));
-
-
 
 
 const Project1 = () => {
     const classes = useStyles();
     const [projectName, setProjectName] = useState('Job Tracker');
     const [projectDescription, setProjectDescription] = useState('Manage and keep tracking your job applications');
+
 
 
     const cardHeader = () => {
@@ -64,22 +70,22 @@ const Project1 = () => {
                             className={classes.skills}
                         >
                             <Grid item xs={3}>
-                                <Typography variant="h3">
+                                <Typography variant="h5">
                                     <FaReact />
                                 </Typography>
                             </Grid>
                             <Grid item xs={3}>
-                                <Typography variant="h3">
+                                <Typography variant="h5">
                                     <SiJavascript />
                                 </Typography>
                             </Grid>
                             <Grid item xs={3}>
-                                <Typography variant="h3">
+                                <Typography variant="h5">
                                     <SiRedux />
                                 </Typography>
                             </Grid>
                             <Grid item xs={3}>
-                                <Typography variant="h3">
+                                <Typography variant="h5">
                                     <SiFirebase />
                                 </Typography>
                             </Grid>
@@ -98,7 +104,7 @@ const Project1 = () => {
 
             </CardHeader>
             <CardActionArea>
-                <CardContent>
+                <CardContent className={classes.cardContent}>
                     <Typography variant="h5" gutterBottom>
                         {projectName}
                     </Typography>
@@ -107,7 +113,7 @@ const Project1 = () => {
                     </Typography>
                 </CardContent>
             </CardActionArea>
-            <CardActions>
+            <CardActions className={classes.cardActions}>
                 <Button
                     size="small"
                     color="primary"

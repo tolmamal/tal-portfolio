@@ -39,6 +39,12 @@ const useStyles = makeStyles((theme) => ({
         justifyContent: 'center',
         paddingTop: '8px',
         textAlign: 'center'
+    },
+    cardContent: {
+        padding: '4px'
+    },
+    cardActions: {
+        display: 'block',
     }
 
 }));
@@ -65,17 +71,17 @@ const Project4 = () => {
                             className={classes.skills}
                         >
                             <Grid item xs={4}>
-                                <Typography variant="h3">
+                                <Typography variant="h5">
                                     <SiPython />
                                 </Typography>
                             </Grid>
                             <Grid item xs={4}>
-                                <Typography variant="h3">
+                                <Typography variant="h5">
                                     <SiMongodb />
                                 </Typography>
                             </Grid>
                             <Grid item xs={4}>
-                                <Typography variant="h3">
+                                <Typography variant="h5">
                                     <SiFlask />
                                 </Typography>
                             </Grid>
@@ -93,7 +99,7 @@ const Project4 = () => {
 
             </CardHeader>
             <CardActionArea>
-                <CardContent>
+                <CardContent className={classes.cardContent}>
                     <Typography variant="h5" gutterBottom>
                         {projectName}
                     </Typography>
@@ -102,7 +108,7 @@ const Project4 = () => {
                     </Typography>
                 </CardContent>
             </CardActionArea>
-            <CardActions>
+            <CardActions className={classes.cardActions}>
                 <Button
                     size="small"
                     color="primary"

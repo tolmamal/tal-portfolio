@@ -38,6 +38,12 @@ const useStyles = makeStyles((theme) => ({
         justifyContent: 'center',
         paddingTop: '8px',
         textAlign: 'center'
+    },
+    cardContent: {
+        padding: '4px'
+    },
+    cardActions: {
+        display: 'block',
     }
 
 }));
@@ -64,17 +70,17 @@ const Project5 = () => {
                             className={classes.skills}
                         >
                             <Grid item xs={4}>
-                                <Typography variant="h3">
+                                <Typography variant="h5">
                                     <FaReact />
                                 </Typography>
                             </Grid>
                             <Grid item xs={4}>
-                                <Typography variant="h3">
+                                <Typography variant="h5">
                                     <IoLogoJavascript />
                                 </Typography>
                             </Grid>
                             <Grid item xs={4}>
-                                <Typography variant="h3">
+                                <Typography variant="h5">
                                     <SiMaterialUi />
                                 </Typography>
                             </Grid>
@@ -92,7 +98,7 @@ const Project5 = () => {
 
             </CardHeader>
             <CardActionArea>
-                <CardContent>
+                <CardContent className={classes.cardContent}>
                     <Typography variant="h5" gutterBottom>
                         {projectName}
                     </Typography>
@@ -101,7 +107,7 @@ const Project5 = () => {
                     </Typography>
                 </CardContent>
             </CardActionArea>
-            <CardActions>
+            <CardActions className={classes.cardActions}>
                 <Button
                     size="small"
                     color="primary"

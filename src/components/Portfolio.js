@@ -40,7 +40,7 @@ const Portfolio = () => {
 
     return (
         <Box component="div" className={classes.mainContainer}>
-            <Grid container justify="center">
+            <Grid container justify="center" spacing={1}>
                 <Grow
                     in={checked}
                     style={{ transformOrigin: '0 0 0' }}

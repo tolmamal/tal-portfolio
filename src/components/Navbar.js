@@ -54,6 +54,25 @@ const useStyles = makeStyles((theme) => ({
     menuIcon: {
         color: "tomato",
     },
+    logo: {
+        display: 'block',
+        flex: 'none',
+        float: 'left',
+        fontSize: '1.5em',
+        textDecoration: 'none',
+
+
+    },
+    logoName: {
+        fontFamily: 'Dancing Script, cursive',
+        fontWeight: 'bold',
+        fontVariantLigatures: 'no-common-ligatures',
+        padding: '0 10px',
+        color: theme.palette.secondary.main
+    },
+    secondaryColor: {
+        color: theme.palette.secondary.main
+    }
 
 }));
 
@@ -105,9 +124,14 @@ const Navbar = () => {
                         <IconButton onClick={() => setOpen(true)}>
                             <MenuIcon className={classes.menuIcon} />
                         </IconButton>
-                        <Typography variant="h5" className={classes.title}>
-                            Portfolio
-                        </Typography>
+                        <a href="" className={classes.logo}>
+                            <span className={classes.secondaryColor}> &lt;</span>
+                            <span className={classes.logoName}>Tal Galili</span>
+                            <span className={classes.secondaryColor}>/&gt;</span>
+                        </a>
+                        {/*<Typography variant="h5" className={classes.title}>*/}
+                        {/*    Portfolio*/}
+                        {/*</Typography>*/}
                     </Toolbar>
                 </AppBar>
             </Box>

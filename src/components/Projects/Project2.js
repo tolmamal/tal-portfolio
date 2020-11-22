@@ -38,6 +38,12 @@ const useStyles = makeStyles((theme) => ({
         alignItems: 'center',
         justifyContent: 'center',
         paddingTop: '8px'
+    },
+    cardContent: {
+        padding: '4px'
+    },
+    cardActions: {
+        display: 'block',
     }
 
 }));
@@ -62,22 +68,22 @@ const Project2 = () => {
                             className={classes.skills}
                         >
                             <Grid item xs={3}>
-                                <Typography variant="h3">
+                                <Typography variant="h5">
                                     <FaReact />
                                 </Typography>
                             </Grid>
                             <Grid item xs={3}>
-                                <Typography variant="h3">
+                                <Typography variant="h5">
                                     <SiJavascript />
                                 </Typography>
                             </Grid>
                             <Grid item xs={3}>
-                                <Typography variant="h3">
+                                <Typography variant="h5">
                                     <SiRedux />
                                 </Typography>
                             </Grid>
                             <Grid item xs={3}>
-                                <Typography variant="h3">
+                                <Typography variant="h5">
                                     <SiBootstrap />
                                 </Typography>
                             </Grid>
@@ -96,7 +102,7 @@ const Project2 = () => {
 
             </CardHeader>
             <CardActionArea>
-                <CardContent>
+                <CardContent className={classes.cardContent}>
                     <Typography variant="h5" gutterBottom>
                         {projectName}
                     </Typography>
@@ -105,7 +111,7 @@ const Project2 = () => {
                     </Typography>
                 </CardContent>
             </CardActionArea>
-            <CardActions>
+            <CardActions className={classes.cardActions}>
                 <Button
                     size="small"
                     color="primary"
